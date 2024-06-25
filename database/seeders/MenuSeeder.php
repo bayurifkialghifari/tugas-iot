@@ -21,6 +21,14 @@ class MenuSeeder extends Seeder
                 'route' => 'cms.dashboard',
                 'ordering' => '1',
             ],
+            [
+                'name' => 'Log Data',
+                'on' => 'cms',
+                'type' => 'item',
+                'icon' => 'send',
+                'route' => 'cms.log',
+                'ordering' => '2',
+            ],
             // Master Data
 
             // Settings
@@ -71,22 +79,6 @@ class MenuSeeder extends Seeder
                 'icon' => 'key',
                 'route' => 'cms.management.access-control',
                 'ordering' => '36',
-            ],
-            [
-                'name' => 'Privacy Policies',
-                'on' => 'cms',
-                'type' => 'item',
-                'icon' => 'file',
-                'route' => 'cms.management.privacy-policy',
-                'ordering' => '37',
-            ],
-            [
-                'name' => 'Terms Of Service',
-                'on' => 'cms',
-                'type' => 'item',
-                'icon' => 'file',
-                'route' => 'cms.management.term-of-service',
-                'ordering' => '38',
             ],
         ]);
     }
