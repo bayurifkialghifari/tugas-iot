@@ -2,12 +2,12 @@
 
 namespace App\Http\Requests\Api;
 
-use App\Traits\isApiRequest;
+use App\Traits\IsApiRequest;
 use Illuminate\Foundation\Http\FormRequest;
 
 class LogRequest extends FormRequest
 {
-    use isApiRequest;
+    use IsApiRequest;
 
     public function rules(): array
     {
